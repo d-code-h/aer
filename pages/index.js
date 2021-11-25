@@ -2,12 +2,13 @@ import * as React from 'react';
 import { useState } from 'react';
 import clientPromise from '../lib/mongodb';
 import Image from 'next/image';
-import Card, {
+import {
+  Card,
   CardHeader,
   CardMedia,
   CardContent,
   CardActions,
-} from 'material-ui/Card';
+} from '@mui/material';
 
 import Button from '@mui/material/Button';
 // import Card from '@mui/material/Card';
