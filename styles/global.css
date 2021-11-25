@@ -11,7 +11,9 @@ div footer.MuiBox-root.css-16ybtzv {
   /* border: 0.5rem solid #ddd;
   border-radius: 0.5rem; */
 }
-
+#us {
+  text-align: center;
+}
 #modal .panel-body {
   padding: 0 15px 0 0;
 }
@@ -210,7 +212,6 @@ a.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiBut
   }
   #us {
     width: 100vh;
-    text-align: center;
   }
   /* Modal */
   #modal .pure-modal-backdrop {
