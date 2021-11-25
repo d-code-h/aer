@@ -104,15 +104,12 @@ export default function Upload({ dept, port, deptName }) {
           hobbies = document
             .getElementById('hobbies')
             .children[1].children[1].value.trim();
-        for (let hobby = 0; hobby <= hobbies.length - 1; hobby++) {
-          userHobbies.push(hobbies[hobby].innerHTML.trim());
-        }
 
         user['nickName'] = nickName;
         user['email'] = email;
         user['phoneNumber'] = phoneNumber;
         user['facebookId'] = facebookId;
-        user['hobbies'] = userHobbies;
+        user['hobbies'] = hobbies;
         setActiveStep(activeStep + 1);
       }
     } else if (activeStep == 2) {
