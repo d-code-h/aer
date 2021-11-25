@@ -129,7 +129,7 @@ export default function Upload({ dept, port, deptName }) {
         user['matricNumber'] = matricNumber;
         user['userImage'] = userImage;
         const result = await fetch(
-          `http://localhost:${port}/api/upload/?firstName=${user['firstName']}&lastName=${user['lastName']}&middleName=${user['middleName']}&address=${user['address']}&date=${user['date']}&gender=${user['gender']}&marital=${user['marital']}&blood=${user['blood']}&genotype=${user['genotype']}&city=${user['city']}&state=${user['state']}&country=${user['country']}&nickName=${user['nickName']}&email=${user['email']}&phoneNumber=${user['phoneNumber']}&facebookId=${user['facebookId']}&hobbies=${user['hobbies']}&studentId=${user['studentId']}&matricNumber=${user['matricNumber']}&userImage=${user['userImage']}`
+          `/api/upload/?firstName=${user['firstName']}&lastName=${user['lastName']}&middleName=${user['middleName']}&address=${user['address']}&date=${user['date']}&gender=${user['gender']}&marital=${user['marital']}&blood=${user['blood']}&genotype=${user['genotype']}&city=${user['city']}&state=${user['state']}&country=${user['country']}&nickName=${user['nickName']}&email=${user['email']}&phoneNumber=${user['phoneNumber']}&facebookId=${user['facebookId']}&hobbies=${user['hobbies']}&studentId=${user['studentId']}&matricNumber=${user['matricNumber']}&userImage=${user['userImage']}`
         );
         setActiveStep(activeStep + 1);
       }

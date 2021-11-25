@@ -29,7 +29,7 @@ const userData = {};
 export default function Profiles({ users, header, dept, deptMessage, port }) {
   async function handleDelete(element) {
     const button = element.target.attributes['id'].value;
-    await fetch(`http://localhost:${port}/api/delete/?deleteUser=${button}`, {
+    await fetch(`/api/delete/?deleteUser=${button}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     });
