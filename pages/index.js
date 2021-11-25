@@ -7,18 +7,19 @@ import {
   CardMedia,
   CardContent,
   CardActions,
+  createTheme,
+  ThemeProvider,
+  Box,
   Button,
+  Container,
   CssBaseline,
+  Grid,
+  Typography,
 } from '@mui/material';
 
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import PureModal from 'react-pure-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
