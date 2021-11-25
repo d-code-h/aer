@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
 import clientPromise from '../lib/mongodb';
-// import Image from 'next/image';
 import {
   Card,
   CardMedia,
