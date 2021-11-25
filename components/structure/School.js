@@ -18,9 +18,11 @@ export default function School() {
         </Grid>
         <Grid id="defaultImage" item xs={12} sm={6}>
           <Image
+            id="uploadedImage"
             src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDw8PDxAPEA8PDw8PDw8PFQ8QDw8NFRUWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIHA//EACIQAQEBAAIBAwUBAAAAAAAAAAABEUHw0YGRsVFhcaHBEv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDqIIAioAAAAAigILUAAAFQAABUUAEBdVAFVDQUQBqKgCqgDUa1iLAb9xlAeQqAIoCAAAAIqAfUDAAAVFQAAAFBFRQAgAACiKCiANaIA0ustAqADCKgAACKAgAAAAJQAAUAEFQAFBBTQIAAaAAAKIoCooEaZlAaVlQZABAABUARQEAARQEUAIAAAAAAigBAAE1QQAFEUBUNBo1AF7wIAoAIAAAAAAACCgIAAAAAAAAeogKAAhpQPCy/hIee/IKJigiooGqgCiANAAUEAAgAAAAKgACKABgILUAAAIEAEJe8AqKAgAKIApiALBFADvCA2AAACGKAgqYAigIKAiooIKYCQVAAUEFQAAAAAAEFQAAAWAGiANgAAAAAItAEVAVFQFQADBQQAAAAwAEUBBcLAQVAAAQVAFTFBMF9gGgAAAAAEUAAAoAIoAIoCYoYAiqCAYCUq0BAXPnARGkoIKgAYd5BFMLABe8oDQgAABqoAAAQAAABUAUTVAAAAACpoKtY739NWgXweWePZZfyBcXZ9/6lXewBKbAACgCAL6AgAgCiKAIoCoAogCpoAAApENBQQGkQBdBAKU7gBKrPCgaaAL/o3735QAEwAAA0QBQAAAVKALAAFQBRAAs4ABQAxAA1UAUAAAEJeAAAAQAXEgAAAAA//9k="
             alt="Uploaded Image"
-            width="300px"
+            width={300}
+            height={200}
           />
         </Grid>
         <Grid id="user_image" item xs={12} sm={3}>
@@ -43,7 +45,10 @@ export default function School() {
             cropping={false} // set ability to crop images -> default = true
             onSuccess={(response) => {
               var userImage = response['info'].secure_url;
-              document.getElementsByTagName('img')[0].src = userImage;
+              document.getElementById('uploadedImage').src = userImage;
+              document.getElementById(
+                'uploadedImage'
+              ).parentElement.style.minHeight = '300px';
             }} // add success callback -> returns result
             onFailure={(err) => {
               console.log(err);

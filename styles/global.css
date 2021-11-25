@@ -3,12 +3,18 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+div footer.MuiBox-root.css-16ybtzv {
+  width: 100%;
+}
 /* Modal */
 #modal .panel.panel-default {
   /* border: 0.5rem solid #ddd;
   border-radius: 0.5rem; */
 }
 
+#modal .panel-body {
+  padding: 0 15px 0 0;
+}
 #modal .pure-modal-backdrop {
   height: 60%;
   width: 60%;
@@ -29,7 +35,7 @@
 }
 #modal-message img {
   width: 40%;
-  height: 90%;
+  height: 100%;
   position: fixed;
 }
 #modal-message .to-right,
@@ -84,7 +90,7 @@ span.contact {
 }
 #header {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-image: url('/7.jpg');
   filter: brightness(0.9);
   background-size: cover;
@@ -195,6 +201,10 @@ a.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiBut
 
 @media screen and (max-width: 550px) {
   /* Page */
+  #header {
+    height: 100%;
+    width: 100vh;
+  }
   #header-container {
     width: 100vh;
   }
@@ -252,9 +262,9 @@ a.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiBut
   #defaultImage {
     text-align: center;
   }
-  #defaultImage img {
+  /* #defaultImage img {
     width: 200px;
-  }
+  } */
   #header-content #main {
     font-size: 1.5rem;
     letter-spacing: 0.4rem;
@@ -262,6 +272,9 @@ a.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiBut
     text-transform: uppercase;
     margin-bottom: 4rem;
     line-height: 1.2;
+  }
+  div footer.MuiBox-root.css-16ybtzv {
+    width: 100vh;
   }
 }
 #date:hover {

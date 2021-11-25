@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import clientPromise from '../lib/mongodb';
-import Image from 'next/image';
+// import Image from 'next/image';
 import {
   Card,
   CardMedia,
@@ -69,7 +69,12 @@ export default function Profiles({ users, header, dept, deptMessage, port }) {
                 >
                   <div id="modal-message">
                     <Grid item sm={6}>
-                      <Image src={userView.userImage} alt="User Image" />
+                      <img
+                        src={userView.userImage}
+                        width="200px"
+                        height="200px"
+                        alt="User Image"
+                      />
                     </Grid>
                     <Grid item sm={6}>
                       <div id="content">
@@ -179,15 +184,13 @@ export default function Profiles({ users, header, dept, deptMessage, port }) {
       </div>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Grid id="header-container" container spacing={3}>
-          <div id="header">
-            <div id="header-content">
-              <h1>{header}</h1>
-              <p>{deptMessage}</p>
-              <a href="#us">Check Us Out</a>
-            </div>
+        <div id="header">
+          <div id="header-content">
+            <h1>{header}</h1>
+            <p>{deptMessage}</p>
+            <a href="#us">Check Us Out</a>
           </div>
-        </Grid>
+        </div>
 
         <main>
           {/* Hero unit */}

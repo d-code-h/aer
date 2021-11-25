@@ -126,7 +126,7 @@ export default function Upload({ dept, port, deptName }) {
     } else if (activeStep == 2) {
       let studentId = document.getElementById('studentId').value.trim(),
         matricNumber = document.getElementById('matricNumber').value.trim(),
-        userImage = document.getElementsByTagName('img')[0].src.trim();
+        userImage = document.getElementById('uploadedImage').src.trim();
       if (
         studentId == '' ||
         matricNumber == '' ||
