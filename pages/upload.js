@@ -43,12 +43,12 @@ export default function Upload({ dept, port, deptName }) {
 
   const handleNext = async () => {
     if (activeStep == 0) {
-      let firstName = document.getElementById('firstName').value.trim(),
-        lastName = document.getElementById('lastName').value.trim(),
-        address = document.getElementById('address').value.trim(),
-        city = document.getElementById('city').value.trim(),
-        state = document.getElementById('state').value.trim(),
-        country = document.getElementById('country').value.trim();
+      let firstName = document.getElementById('firstName').value.trim();
+      let lastName = document.getElementById('lastName').value.trim();
+      let address = document.getElementById('address').value.trim();
+      let city = document.getElementById('city').value.trim();
+      let state = document.getElementById('state').value.trim();
+      let country = document.getElementById('country').value.trim();
       if (
         firstName == '' ||
         lastName == '' ||
@@ -60,28 +60,28 @@ export default function Upload({ dept, port, deptName }) {
         setActiveStep(activeStep);
         document.getElementById('error').style.display = 'block';
       } else {
-        let middleName = document.getElementById('middleName').value.trim(),
-          date = document.getElementById('date').value.trim(),
-          gender = document
-            .getElementsByClassName(
-              'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-            )[0]
-            .value.trim(),
-          marital = document
-            .getElementsByClassName(
-              'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-            )[1]
-            .value.trim(),
-          blood = document
-            .getElementsByClassName(
-              'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-            )[2]
-            .value.trim(),
-          genotype = document
-            .getElementsByClassName(
-              'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-            )[3]
-            .value.trim();
+        let middleName = document.getElementById('middleName').value.trim();
+        let date = document.getElementById('date').value.trim();
+        let gender = document
+          .getElementsByClassName(
+            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
+          )[0]
+          .value.trim();
+        let marital = document
+          .getElementsByClassName(
+            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
+          )[1]
+          .value.trim();
+        let blood = document
+          .getElementsByClassName(
+            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
+          )[2]
+          .value.trim();
+        let genotype = document
+          .getElementsByClassName(
+            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
+          )[3]
+          .value.trim();
         user['firstName'] = firstName;
         user['lastName'] = lastName;
         user['middleName'] = middleName;
