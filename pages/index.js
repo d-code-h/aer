@@ -20,7 +20,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
-// import 'react-image-gallery/styles/css/image-gallery.css';
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 const theme = createTheme();
 var userValue;
