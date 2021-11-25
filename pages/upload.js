@@ -60,28 +60,20 @@ export default function Upload({ dept, port, deptName }) {
         setActiveStep(activeStep);
         document.getElementById('error').style.display = 'block';
       } else {
-        let middleName = document.getElementById('middleName').value.trim();
-        let date = document.getElementById('date').value.trim();
-        let gender = document
-          .getElementsByClassName(
-            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-          )[0]
-          .value.trim();
-        let marital = document
-          .getElementsByClassName(
-            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-          )[1]
-          .value.trim();
-        let blood = document
-          .getElementsByClassName(
-            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-          )[2]
-          .value.trim();
-        let genotype = document
-          .getElementsByClassName(
-            'MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput'
-          )[3]
-          .value.trim();
+        let middleName = document.getElementById('middleName').value.trim(),
+          date = document.getElementById('date').value.trim(),
+          gender = document
+            .getElementById('gender')
+            .children[1].children[1].value.trim(),
+          marital = document
+            .getElementById('marital')
+            .children[1].children[1].value.trim(),
+          blood = document
+            .getElementById('blood')
+            .children[1].children[1].value.trim(),
+          genotype = document
+            .getElementById('gender')
+            .children[1].children[1].value.trim();
         user['firstName'] = firstName;
         user['lastName'] = lastName;
         user['middleName'] = middleName;

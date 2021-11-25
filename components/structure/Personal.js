@@ -106,7 +106,7 @@ export default function Personal() {
         <Grid sx={{ textAlign: 'center' }} item xs={12} sm={6}>
           <Grid sx={{ display: 'flex' }} item xs={12} sm={12}>
             <Grid item xs={12} sm={6}>
-              <FormControl sx={{ m: '1rem 0rem', width: '7rem' }}>
+              <FormControl id="gender" sx={{ m: '1rem 0rem', width: '7rem' }}>
                 <InputLabel id="demo-simple-select-autowidth-label">
                   Gender
                 </InputLabel>
@@ -126,13 +126,16 @@ export default function Personal() {
             </Grid>
             <br />
             <Grid item xs={12} sm={6}>
-              <FormControl sx={{ m: '1rem 0rem', minWidth: '7rem' }}>
+              <FormControl
+                id="marital"
+                sx={{ m: '1rem 0rem', minWidth: '7rem' }}
+              >
                 <InputLabel id="demo-simple-select-autowidth-label">
                   Marital Status
                 </InputLabel>
                 <Select
                   labelId="demo-simple-select-autowidth-label"
-                  id="marital demo-simple-select-autowidth"
+                  id="demo-simple-select-autowidth"
                   value={marital}
                   onChange={handleMaritalChange}
                   autoWidth
@@ -146,13 +149,13 @@ export default function Personal() {
           </Grid>
           <Grid sx={{ display: 'flex' }} item xs={12} sm={12}>
             <Grid item xs={6} sm={6}>
-              <FormControl sx={{ m: '1rem 0rem', width: '7rem' }}>
+              <FormControl id="blood" sx={{ m: '1rem 0rem', width: '7rem' }}>
                 <InputLabel id="demo-simple-select-autowidth-label">
                   Blood Group
                 </InputLabel>
                 <Select
                   labelId="demo-simple-select-autowidth-label"
-                  id="blood demo-simple-select-autowidth"
+                  id="demo-simple-select-autowidth"
                   value={blood}
                   required
                   onChange={handleBloodChange}
@@ -171,13 +174,13 @@ export default function Personal() {
               </FormControl>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <FormControl sx={{ m: '1rem 0rem', width: '7rem' }}>
+              <FormControl id="genotype" sx={{ m: '1rem 0rem', width: '7rem' }}>
                 <InputLabel id="demo-simple-select-autowidth-label">
                   Genotype
                 </InputLabel>
                 <Select
                   labelId="demo-simple-select-autowidth-label"
-                  id="genotype demo-simple-select-autowidth"
+                  id="demo-simple-select-autowidth"
                   value={genotype}
                   onChange={handleGenotypeChange}
                   autoWidth
