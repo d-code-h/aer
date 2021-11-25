@@ -8,13 +8,9 @@ import {
   CardMedia,
   CardContent,
   CardActions,
+  Button,
 } from '@mui/material';
 
-import Button from '@mui/material/Button';
-// import Card from '@mui/material/Card';
-// import CardActions from '@mui/material/CardActions';
-// import CardContent from '@mui/material/CardContent';
-// import CardMedia from '@mui/material/CardMedia';
 // import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -238,17 +234,17 @@ export default function Profiles({ users, header, dept, deptMessage, port }) {
                   </CardContent>
 
                   <CardActions id="view">
-                    {/* <Button id="view" size="small" onClick={handleModal}>
+                    <Button id="view" size="small" onClick={handleModal}>
                       View
-                    </Button> */}
+                    </Button>
                     <span id="button-delete">
-                      {/* <Button
+                      <Button
                         id={user.matricNumber}
                         size="small"
                         onClick={handleDelete}
                       >
                         Delete
-                      </Button> */}
+                      </Button>
                     </span>
                   </CardActions>
                 </Card>
