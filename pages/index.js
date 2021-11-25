@@ -19,11 +19,11 @@ import Typography from '@mui/material/Typography';
 // import PureModal from 'react-pure-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-// import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 // import 'react-pure-modal/dist/react-pure-modal.min.css';
 // import 'react-image-gallery/styles/css/image-gallery.css';
 
-// const theme = createTheme();
+const theme = createTheme();
 var userValue;
 const userData = {};
 
@@ -177,100 +177,100 @@ export default function Profiles({ users, header, dept, deptMessage, port }) {
             )
         )}
       </div>
-      {/* <ThemeProvider theme={theme}> */}
-      {/* <CssBaseline /> */}
-      <Grid id="header-container" container spacing={3}>
-        <div id="header">
-          <div id="header-content">
-            <h1>{header}</h1>
-            <p>{deptMessage}</p>
-            <a href="#us">Check Us Out</a>
+      <ThemeProvider theme={theme}>
+        {/* <CssBaseline /> */}
+        <Grid id="header-container" container spacing={3}>
+          <div id="header">
+            <div id="header-content">
+              <h1>{header}</h1>
+              <p>{deptMessage}</p>
+              <a href="#us">Check Us Out</a>
+            </div>
           </div>
-        </div>
-      </Grid>
+        </Grid>
 
-      <main>
-        {/* Hero unit */}
-        <Container id="us">
-          {/* End hero unit */}
-          <Grid container spacing={3}>
-            {users.map((user) => (
-              <Grid id={user._id} item key={user._id} xs={6} sm={4} md={3}>
-                <Card
-                  sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    marginTop: '20%',
-                  }}
-                >
-                  <CardMedia
-                    sx={{ height: '350px' }}
-                    component="img"
-                    image={user.userImage}
-                    alt="random"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      <span id="first-name">{user.firstName}</span>{' '}
-                      <span id="last-name">{user.lastName}</span>
-                    </Typography>
-                    <Typography
-                      id="matricNumber"
-                      gutterBottom
-                      variant="h6"
-                      component="h2"
-                    >
-                      {user.matricNumber}
-                    </Typography>
-                    <Typography
-                      id="phoneNumber"
-                      gutterBottom
-                      variant="h6"
-                      component="h2"
-                    >
-                      {user.phoneNumber}
-                    </Typography>
-                  </CardContent>
-
-                  <CardActions id="view">
-                    <Button id="view" size="small" onClick={handleModal}>
-                      View
-                    </Button>
-                    <span id="button-delete">
-                      <Button
-                        id={user.matricNumber}
-                        size="small"
-                        onClick={handleDelete}
+        <main>
+          {/* Hero unit */}
+          <Container id="us">
+            {/* End hero unit */}
+            <Grid container spacing={3}>
+              {users.map((user) => (
+                <Grid id={user._id} item key={user._id} xs={6} sm={4} md={3}>
+                  <Card
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      marginTop: '20%',
+                    }}
+                  >
+                    <CardMedia
+                      sx={{ height: '350px' }}
+                      component="img"
+                      image={user.userImage}
+                      alt="random"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        <span id="first-name">{user.firstName}</span>{' '}
+                        <span id="last-name">{user.lastName}</span>
+                      </Typography>
+                      <Typography
+                        id="matricNumber"
+                        gutterBottom
+                        variant="h6"
+                        component="h2"
                       >
-                        Delete
+                        {user.matricNumber}
+                      </Typography>
+                      <Typography
+                        id="phoneNumber"
+                        gutterBottom
+                        variant="h6"
+                        component="h2"
+                      >
+                        {user.phoneNumber}
+                      </Typography>
+                    </CardContent>
+
+                    <CardActions id="view">
+                      <Button id="view" size="small" onClick={handleModal}>
+                        View
                       </Button>
-                    </span>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </main>
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Typography variant="h6" align="center" gutterBottom>
-          {header}
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          An Assignment on Student Bio data.
-        </Typography>
-        <Typography variant="body2" color="text.secondary" align="center">
-          {'Copyright © '}
-          {dept} {new Date().getFullYear()}/{new Date().getFullYear() + 1}
-          {'.'}
-        </Typography>
-      </Box>
-      {/* </ThemeProvider> */}
+                      <span id="button-delete">
+                        <Button
+                          id={user.matricNumber}
+                          size="small"
+                          onClick={handleDelete}
+                        >
+                          Delete
+                        </Button>
+                      </span>
+                    </CardActions>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </main>
+        <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+          <Typography variant="h6" align="center" gutterBottom>
+            {header}
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            color="text.secondary"
+            component="p"
+          >
+            An Assignment on Student Bio data.
+          </Typography>
+          <Typography variant="body2" color="text.secondary" align="center">
+            {'Copyright © '}
+            {dept} {new Date().getFullYear()}/{new Date().getFullYear() + 1}
+            {'.'}
+          </Typography>
+        </Box>
+      </ThemeProvider>
     </div>
   );
 }
