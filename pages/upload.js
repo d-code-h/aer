@@ -101,9 +101,9 @@ export default function Upload({ dept, port, deptName }) {
         document.getElementById('error').style.display = 'block';
       } else {
         let facebookId = document.getElementById('facebookId').value.trim(),
-          hobbies = document.getElementsByClassName(
-            'MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label'
-          );
+          hobbies = document
+            .getElementById('hobbies')
+            .children[1].children[1].value.trim();
         for (let hobby = 0; hobby <= hobbies.length - 1; hobby++) {
           userHobbies.push(hobbies[hobby].innerHTML.trim());
         }

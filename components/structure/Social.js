@@ -133,7 +133,10 @@ export default function AddressForm() {
           />
         </Grid>
         <Grid item xs={12}>
-          <FormControl sx={{ m: '2rem 3rem 1rem 3rem', minWidth: '25rem' }}>
+          <FormControl
+            id="hobbies"
+            sx={{ m: '2rem 3rem 1rem 3rem', minWidth: '25rem' }}
+          >
             <InputLabel id="demo-multiple-chip-label">Hobbies</InputLabel>
             <Select
               labelId="demo-multiple-chip-label"
