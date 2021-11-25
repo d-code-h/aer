@@ -12,7 +12,7 @@ import {
   Select,
   TextField,
   useTheme,
-} from '@mui/material/styles';
+} from '@mui/material';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const ITEM_HEIGHT = 48;
