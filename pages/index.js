@@ -15,11 +15,11 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-// import PureModal from 'react-pure-modal';
+import PureModal from 'react-pure-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-// import 'react-pure-modal/dist/react-pure-modal.min.css';
+import 'react-pure-modal/dist/react-pure-modal.min.css';
 // import 'react-image-gallery/styles/css/image-gallery.css';
 
 const theme = createTheme();
@@ -57,7 +57,7 @@ export default function Profiles({ users, header, dept, deptMessage, port }) {
           (userView) =>
             userView._id == userValue && (
               <div id="modal" key={userView._id}>
-                {/* <PureModal
+                <PureModal
                   isOpen={modal}
                   closeButton="close"
                   closeButtonPosition="bottom"
@@ -171,7 +171,7 @@ export default function Profiles({ users, header, dept, deptMessage, port }) {
                       </div>
                     </Grid>
                   </div>
-                </PureModal> */}
+                </PureModal>
               </div>
             )
         )}
