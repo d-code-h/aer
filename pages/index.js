@@ -4,14 +4,13 @@ import clientPromise from '../lib/mongodb';
 import Image from 'next/image';
 import {
   Card,
-  CardHeader,
   CardMedia,
   CardContent,
   CardActions,
   Button,
+  CssBaseline,
 } from '@mui/material';
 
-// import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -178,7 +177,7 @@ export default function Profiles({ users, header, dept, deptMessage, port }) {
         )}
       </div>
       <ThemeProvider theme={theme}>
-        {/* <CssBaseline /> */}
+        <CssBaseline />
         <Grid id="header-container" container spacing={3}>
           <div id="header">
             <div id="header-content">
