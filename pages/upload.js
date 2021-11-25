@@ -198,7 +198,7 @@ export default function Upload({ dept, port, deptName }) {
                 <br />
                 <Typography variant="subtitle2" gutterBottom>
                   You can check the home page to see your information{' '}
-                  <Link href="/profile">here.</Link>
+                  <Link href="/">here.</Link>
                 </Typography>
               </React.Fragment>
             ) : (
