@@ -2,7 +2,7 @@ import * as React from 'react';
 import Image from 'next/image';
 import { Button, Grid, Stack, TextField } from '@mui/material';
 import 'react-datepicker/dist/react-datepicker.css';
-import { WidgetLoader, Widget } from '@pointblankdev/react-cloudinary-upload';
+import { WidgetLoader, Widget } from 'react-cloudinary-upload-widget';
 
 export default function School() {
   return (
