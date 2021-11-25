@@ -26,7 +26,7 @@ const theme = createTheme();
 var userValue;
 const userData = {};
 
-export default function Profiles({ users, header, dept, deptMessage, port }) {
+export default function Profiles({ users, header, dept, deptMessage }) {
   async function handleDelete(element) {
     const button = element.target.attributes['id'].value;
     await fetch(`/api/delete/?deleteUser=${button}`, {
@@ -288,7 +288,6 @@ export async function getServerSideProps(context) {
       header: process.env.DEPTNAME,
       dept: process.env.DEPT,
       deptMessage: process.env.DEPTMESSAGE,
-      port: process.env.PORT,
     },
   };
 }

@@ -38,7 +38,7 @@ function getStepContent(step) {
 
 const theme = createTheme();
 
-export default function Upload({ dept, port, deptName }) {
+export default function Upload({ dept, deptName }) {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = async () => {
@@ -226,7 +226,6 @@ export async function getServerSideProps(context) {
   return {
     props: {
       dept: process.env.DEPT,
-      port: process.env.PORT,
       deptName: process.env.DEPTNAME,
     },
   };
