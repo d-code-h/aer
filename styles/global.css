@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Modal */
+#modal .panel.panel-default {
+  /* border: 0.5rem solid #ddd;
+  border-radius: 0.5rem; */
+}
+
+#modal .pure-modal-backdrop {
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+  border: 1rem solid #ddd;
+  border-radius: 2rem;
+}
+#modal .pure-modal {
+  width: 100%;
+  height: 100%;
+}
+
+#modal-message {
+  display: flex;
+  height: 100%;
+}
+#modal-message img {
+  width: 40%;
+  height: 90%;
+  position: fixed;
+}
+#modal-message .to-right,
+h5#citizenship .to-right,
+#modal-message .to-special-right {
+  float: right;
+}
+#modal-message .to-center {
+  text-align: center;
+  margin: 0 3rem;
+}
+#school,
+#personal,
+#social {
+  border: 0.1rem dotted rgba(25, 118, 210, 1);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+#school h4,
+#personal h4,
+#social h4 {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+h5#introduction {
+  text-transform: uppercase;
+  font-style: italic;
+}
+#modal h5 {
+  color: #909090;
+}
+
+h5#address {
+  margin: 1.3rem 0;
+}
+span.name {
+  color: #202020;
+}
+span.contact {
+  margin: 0 2rem;
+}
+
+#modal .close {
+  color: rgb(25, 118, 210);
+  font-size: large;
+}
+
+/* Header */
+#header-container {
+  margin: 0;
+  width: 100%;
+}
+#header {
+  height: 100%;
+  width: 100%;
+  background-image: url('/7.jpg');
+  filter: brightness(0.9);
+  background-size: cover;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+}
+
+#header-content,
+#header p {
+  margin: auto;
+  font-weight: 600;
+}
+#header-content {
+  /* padding: 3rem; */
+  padding-bottom: 4rem;
+  width: 80%;
+  height: auto;
+}
+#header-content h1 {
+  font-size: 400%;
+}
+#header p {
+  width: 40%;
+  font-variant: all-petite-caps;
+  margin: 10% auto;
+  font-size: x-large;
+  font-style: italic;
+}
+#header-content #check {
+  margin-top: 5rem;
+}
+#header-content #main {
+  font-size: 4rem;
+  letter-spacing: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  line-height: 1.2;
+}
+#header-container #sub {
+  max-width: 500px;
+  margin: 5rem auto;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#header-content a:not(:disabled) {
+  cursor: pointer;
+}
+
+#header-content a {
+  cursor: pointer;
+  padding: 10px 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 40px;
+  color: #fff;
+  background-color: inherit;
+  text-shadow: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  max-width: 16rem;
+  margin: 3rem auto;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+#header-content a:hover,
+#header-content #check:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#header-content a:hover {
+  color: rgb(25, 118, 210);
+  background-color: cornsilk;
+  text-decoration: none;
+}
+#header
+  div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-pl7exc-MuiPaper-root-MuiCard-root {
+  min-height: 25rem;
+}
+
+div.MuiCardContent-root.css-46bh2p-MuiCardContent-root {
+  text-align: center;
+}
+
+a.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiButton-textSizeSmall.MuiButtonBase-root.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+}
+#view {
+  margin: auto;
+}
+#button-delete {
+  display: none;
+}
+#date {
+  color: #404040;
+  width: 15rem;
+  border-width: 0;
+  outline: 0;
+  margin-top: 2rem;
+  padding: 0 0 0.5rem 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+@media screen and (max-width: 550px) {
+  /* Page */
+  #header-container {
+    width: 100vh;
+  }
+  #us {
+    width: 100vh;
+  }
+  /* Modal */
+  #modal .pure-modal-backdrop {
+    width: 80%;
+  }
+  #modal .panel-body {
+    padding: 0;
+  }
+  div#content {
+    padding: 15px;
+  }
+  #modal-message {
+    display: block;
+  }
+  #modal-message img {
+    width: 100%;
+    position: inherit;
+  }
+  h2 {
+    text-align: center;
+  }
+  #middle-name {
+    display: block;
+  }
+  #modal-message .to-right {
+    float: none;
+  }
+  span.row {
+    display: block;
+  }
+  #modal-message .to-center {
+    text-align: left;
+    margin: 0;
+  }
+  .MuiFormControl-root.css-x8255u-MuiFormControl-root {
+    width: 100%;
+  }
+  .MuiFormControl-root.css-utrxyh-MuiFormControl-root {
+    margin: 0;
+    min-width: 100%;
+  }
+  #date {
+    width: 100%;
+    padding: 0 0 0.5rem 0;
+    text-align: center;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-12.css-pavvoq-MuiGrid-root#image {
+    padding: 0;
+  }
+  #defaultImage {
+    text-align: center;
+  }
+  #defaultImage img {
+    width: 200px;
+  }
+  #header-content #main {
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+  }
+}
+#date:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+}
+
+#date:focus {
+  border-bottom: 2px solid #1976d2;
+}
+button.MuiButton-root.MuiButton-outlined.MuiButton-outlinedError.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.MuiButtonBase-root.css-180lf2n-MuiButtonBase-root-MuiButton-root {
+  display: block;
+  margin: auto;
+}
+#error {
+  width: 100%;
+  text-transform: none;
+  display: none;
+}
+#error h3 {
+  display: block;
+}
+#error p {
+  text-transform: capitalize;
+}
+#user_image {
+  text-align: center;
+  margin: auto;
+}
+
+#cloudinary_upload_button {
+  background-color: blue;
+}
+
+h5#citizenship .citizen-row {
+  display: block;
+  text-align: center;
+  margin-top: 0.4rem;
+}
