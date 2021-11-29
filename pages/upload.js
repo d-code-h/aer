@@ -72,7 +72,7 @@ export default function Upload({ dept, deptName }) {
             .getElementById('blood')
             .children[1].children[1].value.trim(),
           genotype = document
-            .getElementById('gender')
+            .getElementById('genotype')
             .children[1].children[1].value.trim();
         user['firstName'] = firstName;
         user['lastName'] = lastName;
